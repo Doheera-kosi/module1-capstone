@@ -9,7 +9,7 @@ body {
 
 .container {
   background: #00f;
-  height: 90vh;
+  /* height: 90vh; */
   background-image: url(assets/images/main_big.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,6 +177,16 @@ body {
   padding-bottom: 1.2rem;
 }
 
+.feature-1:hover,
+.feature-2:hover,
+.feature-3:hover,
+.feature-4:hover,
+.feature-5:hover {
+  border: 1px solid #d3d3d3;
+}
+
+
+
 .f-title {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
@@ -308,6 +318,134 @@ body {
 }
 
 
+@media only screen and (min-width: 768px) {
+
+  .desktop-nav {
+    /* background: rgb(207, 207, 207); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20rem; */
+    box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
+    padding: 0 17rem;
+    height: 72px;
+  }
+
+  .live {
+    border: 4.5px solid #ec5242;
+    height: 2.9rem;
+    width: 7rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem;
+    white-space: nowrap;
+    color: #272a31;
+  }
+
+  .nav-link:hover {
+    background: rgb(238, 236, 236);
+    color: #ec5242;
+    border-top: 1px solid #ec5242;
+    transition: 0.5s;
+  }
+
+  .mob-bars {
+    display: none;
+  }
+
+  .hero-head {
+    font-size: 2.2vw;
+    margin-top: 6rem;
+  }
+
+  .hero-intro {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+
+  .homepage {
+    padding: 0 8rem;
+    height: 70vh;
+  }
+
+  .h-text {
+    text-align: left;
+    align-self: start;
+    background: #d3d3d3;
+    width: 60%;
+    line-height: 1.8rem;
+    margin-left: 0;
+    margin-top: 3rem;
+    font-weight: 400;
+    font-size: 1.2vw;
+  }
+
+  .date {
+    margin-top: 4rem;
+    font-size: 2.9vw;
+  }
+
+  .location {
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+
+  .main-program {
+    padding: 2rem 15rem;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.3rem;
+  }
+
+  .feature-1,
+  .feature-2,
+  .feature-3,
+  .feature-4,
+  .feature-5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    padding: 1rem;
+  }
+
+  .f-text {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+  }
+
+  .btn {
+    background: none;
+  }
+
+  .speakers {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
 
 
 
