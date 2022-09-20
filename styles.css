@@ -9,7 +9,7 @@ body {
 
 .container {
   background: #00f;
-  /* height: 90vh; */
+  height: 100vh;
   background-image: url(assets/images/main_big.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,6 +19,9 @@ body {
   display: none;
 }
 
+.soc-icons {
+  display: none;
+}
 /* *************************** */
 .mobile-nav {
   position: fixed;
@@ -27,7 +30,6 @@ body {
 }
 
 .mobile-navbar {
-  background: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +87,8 @@ body {
 .logo {
   font-family: 'Bungee Spice', cursive;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.6rem;
+  text-decoration: none;
 }
 
 .homepage {
@@ -96,7 +99,7 @@ body {
 
 .hero-head {
   font-weight: normal;
-  font-size: 8vw;
+  font-size: 6vw;
   margin: 1rem auto;
 }
 
@@ -111,25 +114,28 @@ body {
 }
 
 .h-text {
-  border: 3px solid rgb(160, 159, 159);
+  border: 3px solid #fff;
   padding: 0.8rem 1.2rem;
   margin: 1.8rem auto;
   line-height: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
 .date {
   font-weight: 900;
   font-size: 1.6rem;
   margin: 0.9rem auto;
+  color: #272a31;
 }
 
 .location {
   font-size: 1.0rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
-/* ******************************* */
 /* Main - Program */
-/* ******************************* */
 .main-program {
   background: #272a31;
   width: 100vw;
@@ -267,7 +273,6 @@ body {
 }
 
 /* ///////////////////////////// */
-
 .partners {
   display: flex;
   flex-direction: column;
@@ -282,7 +287,6 @@ body {
   width: 100%;
   gap: 1.5rem;
   margin: 2rem auto;
-  /* margin-bottom: 1rem; */
 }
 
 .partner {
@@ -294,7 +298,6 @@ body {
 }
 
 .p-icon {
-  background: #000;
   width: 85px;
 }
 
@@ -321,15 +324,37 @@ body {
 @media only screen and (min-width: 768px) {
 
   .desktop-nav {
-    /* background: rgb(207, 207, 207); */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* gap: 20rem; */
     box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
     padding: 0 17rem;
-    height: 72px;
+    height: 102px;
+  }
+
+  .soc-icons {
+    background: #272a31;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 20rem;
+    gap: 0.8rem;
+    height: 1.8rem;
+  }
+
+  .soc-icons a {
+    color: #d3d3d3;
+    text-decoration: none;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 25rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
   }
 
   .live {
@@ -385,7 +410,7 @@ body {
 
   .homepage {
     padding: 0 8rem;
-    height: 70vh;
+    height: 80vh;
   }
 
   .h-text {
@@ -408,10 +433,15 @@ body {
   .location {
     margin-top: 2rem;
     font-weight: bold;
+    font-size: 1.8rem;
   }
 
   .main-program {
     padding: 2rem 15rem;
+  }
+
+  .featured {
+    margin-top: 2rem;
   }
 
   .features {
@@ -443,23 +473,29 @@ body {
   }
 
   .speakers {
-    background-color: lightblue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 15rem;
   }
 
+  .partners {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  .partner-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

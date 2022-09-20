@@ -25,7 +25,7 @@ const data = [
   {
     id: '4',
     img: './assets/images/speaker_04.png',
-    name: 'Yochai BenKler',
+    name: 'Prof. Mark Gumah',
     position: 'Lorem, ipsum dolor sit amet consectetur.',
     ach: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
