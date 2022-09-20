@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CapStone Project</title>
+  <title>Home-Capstone</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Lobster+Two:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Lobster+Two:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="container">
     <nav class="mob-bars">
-      <div class="bars active">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <div class="toggle-cont">
+        <div class="toggle"><i class="fa fa-bars"></i></div>
       </div>
+      <!-- <div class="bars active">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div> -->
       <a href="#" class='logo'>EkCode</a>
     </nav>
     <nav class="desktop-nav">
@@ -33,8 +37,8 @@
         </div>
         <ul class="nav-links">
           <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">About</a>
-          <a href="#" class="nav-link">Program</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="#program" class="nav-link">Program</a>
           <a href="#" class="nav-link">Join</a>
           <a href="#" class="nav-link">Sponsor</a>
           <a href="#" class="nav-link live">EkCode Live</a>
@@ -43,9 +47,9 @@
     </nav>
     <div id="mobile" class="mobile-nav">
       <nav class="mobile-navbar">
-        <img src="./assets/images/close.png" class="close" alt="Close Icon">
+        <!-- <img src="./assets/images/close.png" class="close" alt="Close Icon"> -->
         <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">About</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="#" class="nav-link">Program</a>
         <a href="#" class="nav-link">Join</a>
         <a href="#" class="nav-link">Sponsor</a>
@@ -62,7 +66,7 @@
       </div>
     </div>
   </header>
-  <section class="main-program">
+  <section class="main-program" id="program">
     <h2 class="main-title">Main Progam</h2>
     <hr class="hr">
     <div class="features">
@@ -181,6 +185,19 @@
     <a href="#" class='logo'>EkCode</a>
     <h3>@XYZ</h3>
   </footer>
+
+  <!-- <script>
+    let togBtn = document.querySelector('.toggle');
+    let icon = togBtn.querySelector('.fa-bars');
+
+    togBtn.onclick = function (){
+      if(icon.classList.contains('fa-bars')) {
+        icon.classList.replace('fa-bars', 'fa-times')
+      }else {
+        icon.classList.replace('fa-times', 'fa-bars')
+      }
+    }
+  </script> -->
 
   <script src="script.js"></script>
 </body>
