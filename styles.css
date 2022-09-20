@@ -25,8 +25,19 @@ body {
 /* *************************** */
 .mobile-nav {
   position: fixed;
+  background-color: #262626;
   height: 100vh;
   left: -100%;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1.6rem;
+}
+
+.mobile-nav.active {
+  left: 0;
 }
 
 .mobile-navbar {
@@ -42,7 +53,7 @@ body {
 
 /* **************************** */
 .mob-bars {
-  background: none;  /* Here*/
+  background: none;  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -52,36 +63,20 @@ body {
   box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
 }
 
-.bars {
-  background: none; /* Here*/
+.toggle-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45px;
-  height: 45px;
-  gap: 5px;
+  align-items: center;
 }
 
-.bar {
-  height: 4px;
-  width: 30px;
-  border-radius: 15px;
-  background: #000;
+.toggle {
+  cursor: pointer;
 }
 
-.bars:active .bar:nth-child(2) {
-  display: none;
-}
-
-.bars:active .bar:nth-child(1) {
-  transform: translateY(9.3px) rotate(45deg);
-  transition: 1.4s;
-}
-
-
-.bars:active .bar:nth-child(3) {
-  transform: translateY(0.3px) rotate(-45deg);
-  transition: 1.4s;
+.toggle i {
+  font-weight: normal;
+  font-size: 2rem;
 }
 
 .logo {
@@ -437,6 +432,7 @@ body {
   }
 
   .main-program {
+    margin-top: 10rem;
     padding: 2rem 15rem;
   }
 
