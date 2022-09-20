@@ -64,3 +64,22 @@ const render = () => {
 window.onload = () => {
   render();
 };
+
+// Toggle code
+let togBtn = document.querySelector('.toggle');
+let icon = togBtn.querySelector('.fa-bars');
+togBtn.onclick = function () {
+  if (icon.classList.contains('fa-bars')) {
+    icon.classList.replace('fa-bars', 'fa-times');
+  } else {
+    icon.classList.replace('fa-times', 'fa-bars');
+  }
+};
+
+const toggle = document.querySelector('.toggle');
+const mobNav = document.querySelector('.mobile-nav');
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active');
+  mobNav.classList.toggle('active');
+});
