@@ -341,6 +341,10 @@ body {
     display: flex;
   }
 
+  .live:hover {
+    border-color: gold;
+  }
+
   .nav-links {
     display: flex;
     gap: 2rem;
