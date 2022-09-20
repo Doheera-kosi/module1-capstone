@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CapStone Project</title>
+  <title>About</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Lobster+Two:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Lobster+Two:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
   <header class="container">
     <nav class="mob-bars">
-      <div class="bars active">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <div class="toggle-cont">
+        <div class="toggle"><i class="fa fa-bars"></i></div>
       </div>
+      <!-- <div class="bars active">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div> -->
       <a href="#" class='logo'>EkCode</a>
     </nav>
     <nav class="desktop-nav">
@@ -32,7 +36,7 @@
           <a href="#" class='logo'>EkCode</a>
         </div>
         <ul class="nav-links">
-          <a href="#" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link">Home</a>
           <a href="#" class="nav-link">About</a>
           <a href="#" class="nav-link">Program</a>
           <a href="#" class="nav-link">Join</a>
@@ -43,8 +47,8 @@
     </nav>
     <div id="mobile" class="mobile-nav">
       <nav class="mobile-navbar">
-        <img src="./assets/images/close.png" class="close" alt="Close Icon">
-        <a href="#" class="nav-link">Home</a>
+        <!-- <img src="./assets/images/close.png" class="close" alt="Close Icon"> -->
+        <a href="index.html" class="nav-link">Home</a>
         <a href="#" class="nav-link">About</a>
         <a href="#" class="nav-link">Program</a>
         <a href="#" class="nav-link">Join</a>
@@ -53,15 +57,45 @@
     </div>
     <div class="homepage">
       <blockquote class="hero-head">"Hello! Sharing world"</blockquote>
-      <h1 class="hero-intro">Are you <br> Looking forward to <br> upskill in Web-Develoment?</h1>
+      <h1 class="hero-intro">Are you Looking forward to <br> upskill in Web-Develoment?</h1>
       <p class="h-text">
         We provide you with both One-on-One and in group training <br> services. We provide you again with mentoring and carrier guidelines as well.      </p>
-      <div class="date">2022.10.15(THU) ~ 16(FRI)</div>
+      <!-- <div class="date">2022.10.15(THU) ~ 16(FRI)</div> -->
       <div class="location">
-        @ Kintampo Cultural Center, Bono East.
+        Please contact us per Email for any further enquiries about ekcode 2022!
+        <a href="#">ekcode.2022@ekcode.org</a> 
       </div>
     </div>
   </header>
+
+  <section class="main">
+    <h2 class="h02">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <hr class="hr">
+    <p class="p02">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed aspernatur id fuga, iure ullam impedit!</p>
+    <div class="cc-container">
+      <div class="logo">EkCode</div>
+      <div class="cc">
+        <h2 class="cc-text">Lorem ipsum dolor sit amet.</h2>
+        <p class="date-2">14th - 17th Oct 2022 | Tamale-Ghana</p>
+      </div>
+    </div>
+    <hr class="hr-3">
+
+    <h2 class="sp">See the past EKCode Training</h2>
+    <hr class="hr">
+    <p class="sp-p">Take a look at the EKCode training sessions which took place in Tamale </p>
+    <div class="photos">
+      <div class="photo-container">
+        <span>2022</span>
+        EKCode Photos from 2022
+      </div>
+      <div class="photo-container">
+        <span>2022</span>
+        EKCode Photos from 2022
+      </div>
+    </div>
+  </section>
+<!-- 
   <section class="main-program">
     <h2 class="main-title">Main Progam</h2>
     <hr class="hr">
@@ -98,11 +132,12 @@
     </div>
     <button id="button" type="button" class="btn">Join XYZ Now - 2022</button>
   </section>
-  <section class="featured">
+   -->
+  <!-- <section class="featured">
     <div class="featured-title">Featured Speakers</div>
     <hr class="hr">
     
-    <div class="speakers">
+    <div class="speakers"> -->
   <!--<div id="speaker01" class="speaker-1">
         <img src="./assets/images/speaker_01.png" alt="Speaker One" class="img">
         <div class="about-speaker">
@@ -162,7 +197,7 @@
           <div class="speaker-ach">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
       </div> -->
-    </div>
+    <!-- </div> -->
   
   </section>
   <section class="partners">
@@ -181,6 +216,23 @@
     <a href="#" class='logo'>EkCode</a>
     <h3>@XYZ</h3>
   </footer>
+
+  <div class="toggle-cont">
+    <div class="toggle"><i class="fa fa-bars"></i></div>
+  </div>
+
+  <script>
+    let togBtn = document.querySelector('.toggle');
+    let icon = togBtn.querySelector('.fa-bars');
+
+    togBtn.onclick = function (){
+      if(icon.classList.contains('fa-bars')) {
+        icon.classList.replace('fa-bars', 'fa-times')
+      }else {
+        icon.classList.replace('fa-times', 'fa-bars')
+      }
+    }
+  </script>
 
   <script src="script.js"></script>
 </body>
