@@ -494,6 +494,18 @@ body {
     padding: 0 15rem;
   }
 
+  .speaker-name {
+    font-size: 1.6rem;
+  }
+
+  .speaker-position {
+    font-size: 1rem;
+  }
+
+  .speaker-ach {
+    font-size: 1rem;
+  }
+
   .partners {
     height: 30vh;
     display: flex;
