@@ -395,9 +395,13 @@ span {
 
   .container {
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/webdev.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/mainbig.png);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  nav {
+    background: #fff;
   }
 
   .homepage {
