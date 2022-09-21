@@ -139,8 +139,6 @@ nav {
   background: #272a31;
   width: 100vw;
   background-image: url(assets/images/bg_pattern.png);
-  background-size: 100%;
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,7 +431,7 @@ nav {
   }
 
   .hero-head {
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-top: 6rem;
   }
 
@@ -549,6 +547,10 @@ nav {
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+  }
+
+  body {
+    background: rgb(245, 245, 245);
   }
 
   .footer {
