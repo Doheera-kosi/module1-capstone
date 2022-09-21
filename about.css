@@ -84,40 +84,6 @@ body {
   font-size: 2rem;
 }
 
-/* 
-.bars {
-  background: none; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  gap: 5px;
-}
-
-.bar {
-  height: 4px;
-  width: 30px;
-  border-radius: 15px;
-  background: #000;
-}
-
-.bars:active .bar:nth-child(2) {
-  display: none;
-}
-
-.bars:active .bar:nth-child(1) {
-  transform: translateY(9.3px) rotate(45deg);
-  transition: 1.4s;
-}
-
-
-.bars:active .bar:nth-child(3) {
-  transform: translateY(0.3px) rotate(-45deg);
-  transition: 1.4s;
-}
- */
-
 .logo {
   font-family: 'Bungee Spice', cursive;
   font-weight: 400;
@@ -158,7 +124,8 @@ a {
   margin: 1.8rem auto;
   line-height: 1.6rem;
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
   text-align: center;
   background: #fff;
 }
@@ -449,7 +416,7 @@ span {
     height: 30vh;
     justify-content: center;
     padding-top: 3rem;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -464,13 +431,17 @@ span {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .location a {
+    font-size: 1rem;
   }
 
   .cc-container {
-    border: 2px solid rgb(163, 159, 159);
+    border: 2px solid rgb(209, 204, 204);
     width: 30%;
     height: 30vh;
     padding: 5rem;
@@ -490,6 +461,10 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 
   .partner-icons {

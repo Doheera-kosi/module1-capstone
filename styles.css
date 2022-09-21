@@ -364,6 +364,10 @@ body {
     text-decoration: none;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   .desktop {
     display: flex;
     flex-direction: row;
@@ -476,6 +480,15 @@ body {
     width: 100%;
     padding-left: 0;
     padding: 1rem;
+  }
+
+  .f-title {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .f-title br {
+    display: none;
   }
 
   .f-text {
