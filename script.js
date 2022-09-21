@@ -71,7 +71,7 @@ window.onload = () => {
 // Toggle code
 const togBtn = document.querySelector('.toggle');
 const icon = togBtn.querySelector('.fa-bars');
-togBtn.onclick = function () {
+togBtn.onclick = () => {
   if (icon.classList.contains('fa-bars')) {
     icon.classList.replace('fa-bars', 'fa-times');
   } else {
@@ -88,7 +88,7 @@ toggle.addEventListener('click', () => {
 });
 
 // Close NavMenu
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
   toggle.classList.remove('active');
   mobNav.classList.remove('active');
 }));

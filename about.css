@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 120vh;
   background-image: url(assets/images/main_big.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,20 +170,19 @@ a {
 .h02 {
   margin-top: 3rem;
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .p02 {
   text-align: center;
   padding: 2rem;
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .cc-container {
   background: white;
-  border: 1px solid rgb(78, 52, 52);
+  border: 4px solid rgb(236, 234, 234);
   width: 75%;
   display: flex;
   flex-direction: column;
