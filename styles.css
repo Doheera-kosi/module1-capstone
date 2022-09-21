@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  height: 110vh;
+  height: 100%;
   background-image: url(assets/images/mobile_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,6 +32,7 @@ nav {
   background-color: #262626;
   height: 100vh;
   left: -100%;
+  transition: 0.5s;
 }
 
 .mobile-nav a {
@@ -52,7 +53,7 @@ nav {
   width: 100vw;
   gap: 30px;
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 2.6rem;
   background: #000;
 }
 
@@ -98,13 +99,13 @@ nav {
 
 .hero-head {
   font-weight: normal;
-  font-size: 6vw;
+  font-size: 1.6rem;
   margin: 1rem auto;
 }
 
 .hero-intro {
   font-weight: 900;
-  font-size: 9vw;
+  font-size: 2rem;
 }
 
 .hero-head,
@@ -130,7 +131,7 @@ nav {
 .location {
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 /* Main - Program */
@@ -138,6 +139,7 @@ nav {
   background: #272a31;
   width: 100vw;
   background-image: url(assets/images/bg_pattern.png);
+  background-size: 100%;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -330,11 +332,13 @@ nav {
 /* Footer */
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 2rem auto;
   font-weight: normal;
+  padding: 0 1rem;
+  gap: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -360,7 +364,7 @@ nav {
   }
 
   .container {
-    height: 110vh;
+    height: 100%;
     background: url(assets/images/mainbig.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -429,7 +433,7 @@ nav {
   }
 
   .hero-head {
-    font-size: 2.2vw;
+    font-size: 2.0rem;
     margin-top: 6rem;
   }
 
@@ -440,7 +444,7 @@ nav {
 
   .homepage {
     padding: 0 8rem;
-    height: 80vh;
+    height: 100%;
   }
 
   .h-text {
@@ -452,18 +456,18 @@ nav {
     margin-left: 0;
     margin-top: 3rem;
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 1.1rem;
   }
 
   .date {
-    margin-top: 4rem;
-    font-size: 2.9vw;
+    margin-top: 3rem;
+    font-size: 2rem;
   }
 
   .location {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
   }
 
   .main-program {
@@ -545,5 +549,11 @@ nav {
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
   }
 }
