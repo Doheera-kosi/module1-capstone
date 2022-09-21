@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://doheera-kosi.github.io/module1-capstone/)
 
 
 ## Getting Started
