@@ -14,13 +14,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.homepage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .desktop-nav {
   display: none;
 }
@@ -28,12 +21,17 @@ body {
 .soc-icons {
   display: none;
 }
+
 /* *************************** */
 .mobile-nav {
   position: fixed;
   background: #262626;
   height: 100vh;
   left: -100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .mobile-nav a {
@@ -92,11 +90,11 @@ body {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   margin: auto;
   margin-top: 2rem;
@@ -139,7 +137,7 @@ a {
 }
 
 .location {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -233,13 +231,9 @@ a {
 .photo-container {
   height: 14rem;
   width: 90%;
-  background-image: url(assets/images/train.png);
-  background-repeat: no-repeat;
-  background: black;
   overflow: hidden;
-  background: #C33764;
   background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi");
-  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,7 +293,7 @@ span {
 }
 
 .hr-2 {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 /* Footer */
@@ -313,7 +307,6 @@ span {
 }
 
 @media only screen and (min-width: 768px) {
-
   .desktop-nav {
     display: flex;
     flex-direction: column;
@@ -402,7 +395,7 @@ span {
 
   .container {
     height: 100vh;
-    background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(assets/images/webdev.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/webdev.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -414,8 +407,6 @@ span {
 
   .h-text {
     background: #fff;
-    width: 60%;
-    line-height: 1.8rem;
     margin-top: 3rem;
     font-size: 1.2vw;
     text-align: center;
@@ -423,6 +414,7 @@ span {
     height: 30vh;
     justify-content: center;
     padding-top: 3rem;
+
     /* text-align: justify; */
     line-height: 2rem;
     padding-left: 3rem;
@@ -485,131 +477,3 @@ span {
     scroll-behavior: smooth;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* **************************** */
-
-
-
-
-
-/* GENERAL STYLES */
-/* .visuallyHidden {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
-} */
-
-/* h1 {
-  text-align: center;
-} */
-
-/* .container {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* .hamburger {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-} */
-
-/* 
-.hamburger .bar {
-  padding: 0;
-  width: 30px;
-  height: 4px;
-  background-color: maroon;
-  display: block;
-  border-radius: 4px;
-  transition: all 0.4s ease-in-out;
-  position: absolute; 
-}
-
-.bar1 {
-  top: 0;
-}
-
-.bar2,
-.bar3 {
-  top: 13.5px;
-}
-
-.bar3 {
-  right: 0;
-}
-
-.bar4 {
-  bottom: 0;
-} */
-
-/* HAMBURGER */
-
-/* .hamburger2:active .bar1{
-  transform: translateX(40px);
-  background-color: transparent;
-}
-
-.hamburger2:active .bar2{
-  transform: rotate(45deg);
-}
-
-.hamburger2:active .bar3{
-  transform: rotate(-45deg);
-}
-
-.hamburger2:active .bar4{
-  transform: translateX(-40px);
-  background-color: transparent;
-} */

@@ -53,7 +53,7 @@ body {
 
 /* **************************** */
 .mob-bars {
-  background: none;  
+  background: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,7 +82,7 @@ body {
 .logo {
   font-family: 'Bungee Spice', cursive;
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .location {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
@@ -157,7 +157,7 @@ body {
 .features {
   margin-top: 2rem;
   padding-left: 0;
-  gap: 5;
+  gap: 5px;
 }
 
 .feature-1,
@@ -191,7 +191,6 @@ body {
   font-weight: normal;
   font-size: 1.2rem;
   color: #ec5242;
-  word-wrap: wrap;
 }
 
 .f-text {
@@ -205,10 +204,11 @@ body {
   margin: 3rem;
   width: 90%;
   height: 4rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
   border: none;
   padding: 0 2rem;
 }
+
 /* //////////////////////////// */
 .featured {
   display: flex;
@@ -320,7 +320,7 @@ body {
 }
 
 .hr-2 {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 /* Footer */
@@ -334,7 +334,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
   .desktop-nav {
     display: flex;
     flex-direction: column;
@@ -479,8 +478,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 0;
     padding: 1rem;
+    padding-left: 0;
   }
 
   .f-title {
