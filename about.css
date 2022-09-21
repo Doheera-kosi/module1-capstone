@@ -9,7 +9,7 @@ body {
 
 .container {
   height: 120vh;
-  background-image: url(assets/images/main_big.png);
+  background-image: url(assets/images/mobile_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
