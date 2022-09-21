@@ -13,6 +13,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -398,6 +399,13 @@ span {
   .hero-intro {
     margin-top: 2rem;
     font-size: 3rem;
+  }
+
+  .container {
+    height: 100vh;
+    background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(assets/images/webdev.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .homepage {
