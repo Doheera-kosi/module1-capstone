@@ -273,6 +273,7 @@ body {
 }
 
 .show {
+  display: none;
   width: 90%;
   height: 45px;
   font-weight: normal;
