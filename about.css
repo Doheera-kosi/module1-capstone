@@ -304,6 +304,8 @@ span {
   justify-content: center;
   margin: 2rem auto;
   font-weight: normal;
+  padding: 0 1rem;
+  gap: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -383,8 +385,6 @@ span {
   }
 
   .hero-head {
-    font-size: 2.2vw;
-    margin-top: 6rem;
     display: none;
   }
 
@@ -394,7 +394,7 @@ span {
   }
 
   .container {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/mainbig.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -406,36 +406,31 @@ span {
 
   .homepage {
     padding: 0 8rem;
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .h-text {
     background: #fff;
     margin-top: 3rem;
-    font-size: 1.2vw;
+    font-size: 1.3rem;
     text-align: center;
     width: 80%;
-    height: 30vh;
     justify-content: center;
     padding-top: 3rem;
-
-    /* text-align: justify; */
     line-height: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .date {
-    margin-top: 4rem;
-    font-size: 2.9vw;
   }
 
   .location {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 3rem;
   }
 
@@ -446,7 +441,6 @@ span {
   .cc-container {
     border: 2px solid rgb(209, 204, 204);
     width: 30%;
-    height: 30vh;
     padding: 5rem;
   }
 
@@ -454,13 +448,11 @@ span {
     display: flex;
     flex-direction: row;
     width: 70%;
-    height: 45vh;
     gap: 1rem;
     margin-top: 2rem;
   }
 
   .partners {
-    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -468,6 +460,10 @@ span {
 
   .mobile-nav {
     display: none;
+  }
+
+  .p02 {
+    line-height: 1.8rem;
   }
 
   .partner-icons {
@@ -479,5 +475,11 @@ span {
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
   }
 }
