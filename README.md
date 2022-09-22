@@ -16,8 +16,6 @@
 
 [Live Demo Link](https://doheera-kosi.github.io/module1-capstone/)
 
-[Live Video Link]https://loom.com/share/15cc56f403fe49ff8cc356a4ed0af771
-
 
 ## Getting Started
 
