@@ -25,6 +25,7 @@ const data = [
 
   {
     id: '4',
+    class: 'hidden',
     img: './assets/images/speaker04.png',
     name: 'SohYeong Noh',
     position: 'Derictor of Art Central Nobi',
