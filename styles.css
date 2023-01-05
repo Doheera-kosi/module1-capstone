@@ -26,7 +26,6 @@ nav {
   display: none;
 }
 
-/* *************************** */
 .mobile-nav {
   position: fixed;
   background-color: #262626;
@@ -164,11 +163,7 @@ nav {
   gap: 5px;
 }
 
-.feature-1,
-.feature-2,
-.feature-3,
-.feature-4,
-.feature-5 {
+.feature-1 {
   background-color: rgba(255, 255, 255, 0.1);
   display: grid;
   grid-template-columns: auto auto auto;
@@ -181,11 +176,7 @@ nav {
   padding-bottom: 1.2rem;
 }
 
-.feature-1:hover,
-.feature-2:hover,
-.feature-3:hover,
-.feature-4:hover,
-.feature-5:hover {
+.feature-1:hover {
   border: 1px solid #d3d3d3;
 }
 
@@ -234,12 +225,7 @@ nav {
   padding-right: 0.4rem;
 }
 
-.speaker-1,
-.speaker-2,
-.speaker-3,
-.speaker-4,
-.speaker-5,
-.speaker-6 {
+.speaker-1 {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
@@ -482,11 +468,7 @@ nav {
     gap: 0.3rem;
   }
 
-  .feature-1,
-  .feature-2,
-  .feature-3,
-  .feature-4,
-  .feature-5 {
+  .feature-1 {
     display: flex;
     flex-direction: column;
     width: 100%;
